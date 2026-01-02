@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-underline {
+  position: relative;
+  display: inline-flex;
+  padding-bottom: 2px;
+}
+
+.link-underline::before,
+.link-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+  transition: width 0.9s cubic-bezier(0.135, 0.9, 0.15, 1);
+}
+
+.link-underline::after {
+  display: none;
+}
+
+.link-underline:focus-visible::before,
+.link-underline:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+span.inline-flex.items-center.rounded-full.bg-\[\#ff6900\].px-6.py-3.text-\[13px\].font-semibold.uppercase.tracking-\[0\.15em\].text-white.transition-colors.duration-500.group-hover\:bg-\[\#ff7a18\] {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
