@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Mastery from "./components/homeComponents/Mastery";
+import ProjectShowcase from "./components/homeComponents/ProjectShowcase";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
         <div className="relative z-10 w-full max-w-[81%] space-y-16 pb-24">
           <Header />
           <Banner />
-          <Mastery  />
+          <Mastery />
+          <ProjectShowcase />
         </div>
       </div>
     </div>

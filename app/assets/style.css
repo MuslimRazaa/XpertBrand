@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Jossef";
     src: url("fonts/Josefin_Sans/static/JosefinSans-Medium.ttf"),
 }
@@ -40,7 +40,6 @@ body {
 }
 
 
-/* button view tab */
 .tab-container {
     position: relative;
     width: 320px;
@@ -149,10 +148,6 @@ body {
     }
 }
 
-/* ------end---------- */
-
-/* mystry section */
-/* Scrolling Top Banner */
 .scrolling-banner {
     background-color: #1a1a1a;
     padding: 15px 0;
@@ -193,7 +188,6 @@ body {
     }
 }
 
-/* Main Section */
 .main-section {
     max-width: 1400px;
     margin: 80px auto;
@@ -204,10 +198,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    /* align-items: center; */
 }
 
-/* Left Side - Stats Card */
 .stats-card {
     background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
     border: 1px solid #f8f8f8;
@@ -243,7 +235,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Animated Bars */
 .chart-bars {
     position: absolute;
     bottom: 50px;
@@ -290,7 +281,6 @@ body {
 
 
 
-/* Right Side - Content */
 .content-area {
     padding: 0px 0;
 }
@@ -357,7 +347,6 @@ body {
 }
 
 
-/* Discount Section */
 .discount-section {
     max-width: 1400px;
     margin: 80px auto;
@@ -429,5 +418,27 @@ body {
 
     .main-heading {
         font-size: 40px;
+    }
+} */
+
+
+
+
+@font-face {
+    font-family: "Jossef";
+    src: url("fonts/Josefin_Sans/static/JosefinSans-Medium.ttf"),
+}
+
+body {
+    font-family: "Jossef", sans-serif;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
     }
 }
